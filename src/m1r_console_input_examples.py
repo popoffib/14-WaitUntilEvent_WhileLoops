@@ -35,7 +35,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #      or
 #        nothing at all (just press the Enter key)
 #      -- try them!) when running the   input_an_integer   example?
-#      Put your answer here: It waits until something happens to stop running.
+#      Put your answer here: It returns an error
 #
 #   After you have PUT YOUR ANSWERS IN THIS COMMENT as described above,
 #     a. Find someone who has had HER answer checked.
