@@ -115,7 +115,7 @@ def sum_until_prime_input():
 def run_test_next_prime():
     """ Tests the   next_prime    function. """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement this TEST function.
+    # DONE: 3. Implement this TEST function.
     #   It TESTS the  wait_for_prime  function defined below.
     #   Include at least  ** 6 **  tests. (We supplied 5 tests for you.)
     #
@@ -172,14 +172,62 @@ def run_test_next_prime():
     print('Actual:  ', actual)
     print('TEST ENDED!')
 
-    # TODO 3 (continued):
+    # DONE 3 (continued):
     #   PUT YOUR TEST   ** IN THE SPACE BETWEEN **   the
     #   print('TEST STARTED!' ...) and print('TEST ENDED') lines below.
 
     # Test 6:
     print()
     print('TEST STARTED!  Has it ended?')
+    expected = 1
+    actual = next_prime(567)
+    print('Expected:', expected)
+    print('Actual:  ', actual)
+    print('TEST ENDED!')
 
+    # Test 7:
+    print()
+    print('TEST STARTED!  Has it ended?')
+    expected = 1
+    actual = next_prime(7777)
+    print('Expected:', expected)
+    print('Actual:  ', actual)
+    print('TEST ENDED!')
+
+    # Test 8:
+    print()
+    print('TEST STARTED!  Has it ended?')
+    expected = 1
+    actual = next_prime(123)
+    print('Expected:', expected)
+    print('Actual:  ', actual)
+    print('TEST ENDED!')
+
+    # Test 9:
+    print()
+    print('TEST STARTED!  Has it ended?')
+    expected = 1
+    actual = next_prime(1)
+    print('Expected:', expected)
+    print('Actual:  ', actual)
+    print('TEST ENDED!')
+
+    # Test 10:
+    print()
+    print('TEST STARTED!  Has it ended?')
+    expected = 1
+    actual = next_prime(1000000)
+    print('Expected:', expected)
+    print('Actual:  ', actual)
+    print('TEST ENDED!')
+
+    # Test 11:
+    print()
+    print('TEST STARTED!  Has it ended?')
+    expected = 1
+    actual = next_prime(10)
+    print('Expected:', expected)
+    print('Actual:  ', actual)
     print('TEST ENDED!')
 
 
@@ -204,6 +252,11 @@ def next_prime(m):
     # IMPLEMENTATION REQUIREMENT:
     #    -- Use (call) the   is_prime   function above appropriately.
     # -------------------------------------------------------------------------
+    while True:
+        if is_prime(m) == True:
+            return m
+            break
+        m = m + 1
 
 
 def run_test_prime_gap():
