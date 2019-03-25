@@ -107,9 +107,8 @@ def sum_until_prime_input():
         p = int(input('Enter an integer greater than 1: '))
         total = total + p
         if is_prime(p) == True:
-            print('The sum of the input integers is: ', total)
             break
-        return total
+    print('The sum of the input integers is: ', total)
 
 
 def run_test_next_prime():
@@ -179,7 +178,7 @@ def run_test_next_prime():
     # Test 6:
     print()
     print('TEST STARTED!  Has it ended?')
-    expected = 1
+    expected = 569
     actual = next_prime(567)
     print('Expected:', expected)
     print('Actual:  ', actual)
@@ -188,7 +187,7 @@ def run_test_next_prime():
     # Test 7:
     print()
     print('TEST STARTED!  Has it ended?')
-    expected = 1
+    expected = 7789
     actual = next_prime(7777)
     print('Expected:', expected)
     print('Actual:  ', actual)
@@ -197,7 +196,7 @@ def run_test_next_prime():
     # Test 8:
     print()
     print('TEST STARTED!  Has it ended?')
-    expected = 1
+    expected = 127
     actual = next_prime(123)
     print('Expected:', expected)
     print('Actual:  ', actual)
@@ -215,7 +214,7 @@ def run_test_next_prime():
     # Test 10:
     print()
     print('TEST STARTED!  Has it ended?')
-    expected = 1
+    expected = 1000003
     actual = next_prime(1000000)
     print('Expected:', expected)
     print('Actual:  ', actual)
@@ -224,7 +223,7 @@ def run_test_next_prime():
     # Test 11:
     print()
     print('TEST STARTED!  Has it ended?')
-    expected = 1
+    expected = 11
     actual = next_prime(10)
     print('Expected:', expected)
     print('Actual:  ', actual)
@@ -246,7 +245,7 @@ def next_prime(m):
       :type m: int
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     # IMPLEMENTATION REQUIREMENT:
